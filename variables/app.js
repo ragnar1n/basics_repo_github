@@ -1,70 +1,38 @@
-// let vanus=Number(prompt("vanus"))
-// let sugu=prompt("sugu")
-// let treeninguTüüp=Number(prompt("treeningu nr"))
-//
-// console.log(vanus)
-//
-// if (sugu=="n"||sugu=="N"){
-//     console.log("naine")
+// let korrad=Number(prompt("mitu korda"));
+// let kord=1
+// while (kord <=korrad){
+//     console.log(`T6use ja s2ra! ${kord}`);
+//     kord++;
 // }
-// else if (sugu=="m"||sugu=="M"){
-//     console.log("mees")
-// }
-// console.log("treening "+treeninguTüüp)
-//
-// if (sugu=="m"||sugu=="M"){
-//     var pulss= 220-vanus
-// }
-// else if (sugu=="n"||sugu=="N"){
-//     var pulss= 206-vanus*.88
-// }
-//
-// if (treeninguTüüp==1){
-//     var maxPulss=pulss*.7
-//    var minPulss=pulss*.5
-// }else if (treeninguTüüp==2){
-//    var maxPulss=pulss*.8
-//    var minPulss=pulss*.7
-// }else if (treeninguTüüp==3){
-//    var maxPulss=pulss*.87
-//    var minPulss=pulss*.8
-// }
-//
-// console.log(`Pulss peaks olema ${minPulss} kuni ${maxPulss}`)
-
-// let valik=prompt('Kas soovid valida istekoha ise ("ise") v6i saada loosiga ("loos)')
-//
-// if (valik=='ise'){
-//     let kohaValik=prompt('Akna ääres ("aken") või mujal ("muu")')
-//
-//     if (kohaValik=="aken"){
-//         console.log("Valisid aknakoha")
-//     } else if (kohaValik=="muu"){
-//         console.log("Valisid vahekäigukoha")
+// let ringid=Number(prompt('ringide arv'))
+// let porgandidKokku=0
+// let ring=1
+// while (ring <=ringid){
+//     // console.log(`${ring}. ring`)
+//     if(ring %2 ==0){
+//         // console.log(`saab ${ring} porgandit`)
+//         porgandidKokku+=ring
+//         // console.log(porgandidKokku)
 //     }
-// } else if (valik=="loos"){
-// let juhuarv=Math.ceil(Math.random()*3)
-//         if(juhuarv==1){
-//             console.log("Aknakoht")
-//         } else {
-//             console.log("Vahekäigukoht")
-//         }
+//     ring++
 // }
+// console.log(`Porgandite koguarv: ${porgandidKokku}`)
 
-//for (let nimi=algarvutus; tingimus; suurendamine/v2hendamine){
-//tegevused}
+let t2ringud=Number(prompt('t2ringute arv'))
 
-for (let number=1; number <=10; number++){
-    if(number==5){
-        console.log(number)
-        break;
-    }
-    console.log(number)
+for (let kord=1;kord <= t2ringud; kord++){
+    let t2ring=Math.ceil(Math.random()*6)
+    console.log(t2ring)
 }
-console.log("for tsykli l6pp")
 
-let kord = 1
-while (kord <=10){
-    console.log(kord)
-    kord++
+let p6ialpoisid=Number(prompt('mitu poissi'))
+let lumivalgekeseOunad= 14
+
+let p6ialpoiss=1
+while (p6ialpoiss <= p6ialpoisid){
+    let ounad=Math.ceil(Math.random()*2)
+    console.log(ounad)
+    lumivalgekeseOunad=lumivalgekeseOunad-ounad
+    p6ialpoiss++
 }
+console.log(`Lumivalgekesele j2i ${lumivalgekeseOunad} 6una`)
